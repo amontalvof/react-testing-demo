@@ -31,8 +31,8 @@ describe('Skills', () => {
 
     test('Start Learning button is eventually displayed', async () => {
         const view = render(<Skills skills={skills} />);
-        screen.debug();
-        logRoles(view.container);
+        // screen.debug();
+        // logRoles(view.container);
         const startLearningButton = await screen.findByRole(
             'button',
             {
